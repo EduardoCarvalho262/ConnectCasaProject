@@ -9,3 +9,29 @@
 .testeH2 {
     font-size: 32px;
 }
+
+.button {
+    background-color: #15283b;
+    color:  white;
+    border-radius: 100px 100px 100px 100px;
+    padding: 12px 40px 12px 40px;
+    text-decoration: none;
+    box-shadow: none;
+    width: max-content;
+}
+
+.span {
+    color: #15283b;
+    font-size: 52px;
+}
+
+.spanText {
+    font-size: 24px;
+}
+
+.divider {
+    height: 1px;
+    background-color: #ccc;
+    width: 90%;
+    margin: 20px auto;
+  }
