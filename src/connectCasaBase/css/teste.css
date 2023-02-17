@@ -1,3 +1,4 @@
+
 .teste {
     height: 22em;
 }
@@ -35,3 +36,72 @@
     width: 90%;
     margin: 20px auto;
   }
+
+.recomendation{
+    /* Comment border: outset rgb(11, 240, 41); */
+    background-color: #15283b;
+    padding: 20px;
+    width: 35em;
+    margin-left: 15.8em;
+}
+
+.recomendation p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+
+.estrelas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.estrelas i {
+    margin-right: 0.75em;
+    color: #f0ad4e;
+    font-size: 1em;
+}
+
+.borda {
+    border: outset #f33;
+}
+
+.cliente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.nome {
+    color: #15283b;
+    margin: 0;
+}
+
+.cargo {
+    color: #409fda;
+    margin: 0;
+}
+
+.imagem img{
+    border-radius: 50%;
+}
+
+.informacoes {
+    margin-left: 1em;
+}
+
+.botao {
+    font-size: 2em;
+    color: #15283b;
+}
+
+.testeCards {
+    display: flex;
+    width: 18rem;
+}
