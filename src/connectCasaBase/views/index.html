@@ -23,25 +23,25 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
   <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="css/styles.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="/css/styles.css" rel="stylesheet" />
+  <link href="/css/style.css" rel="stylesheet" />
 </head>
 
-<body id="page-top">
+<body>
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" id="mainNav"; style="background-color: #000a25;">
     <div class="container px-5">
-        <a class="navbar-brand fw-bold" href="/views/index.html"><img src="/assets/img/LOGO 2.png" alt="" srcset="" height="60px" width="180px"></a>
+        <a class="navbar-brand fw-bold" href="/index.html"><img src="/assets/img/LOGO 2.png" alt="" srcset="" height="60px" width="180px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="bi-list"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0" >
-                <li class="nav-item"><a class="nav-link me-lg-3" href="/index.html" style="color: whitesmoke; font-weight: bolder">Home</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3" href="/views/index.html" style="color: whitesmoke; font-weight: bolder">Home</a></li>
                 <li class="nav-item"><a class="nav-link me-lg-3" href="/views/services.html" style="color: whitesmoke; font-weight: bolder">Serviços</a></li>
                 <li class="nav-item"><a class="nav-link me-lg-3" href="/views/contact.html" style="color: whitesmoke; font-weight: bolder">Contato</a></li>
-                <li class="nav-item"><a class="nav-link me-lg-3" href="#FAQ" style="color: whitesmoke; font-weight: bolder;">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3" href="/views/index.html/#FAQ" style="color: whitesmoke; font-weight: bolder;">FAQ</a></li>
             </ul>
         </div>
     </div>
@@ -58,13 +58,13 @@
         aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item active carouselResponsivo">
         <img src="/assets/img/MOCKUP SITE.jpg" class="d-block w-100" alt="Imagem de teste 1" style="height: 47em;"/>
       </div>
-      <div class="carousel-item">
-        <img src="/assets/img/LOGO COM FUNDO.jpg" class="d-block w-100" alt="Imagem de teste 2" style="height: 47em;"/>
+      <div class="carousel-item carouselResponsivo">
+        <img src="/assets/img/LOGO COM FUNDO.jpg" class="d-block w-100 img-fluid" alt="Imagem de teste 2" style="height: 47em;"/>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item carouselResponsivo">
         <img src="/assets/img/GABINETE GAMER.jpg" class="d-block w-100" alt="Imagem de teste 3" style="height: 47em;"/>
       </div>
     </div>
@@ -82,33 +82,33 @@
   <!-- * * * * *-->
 
   <!--Quem Somos-->
-  <section class="container d-flex">
+  <section class="container-sm container-md container-lg d-flex">
     <div class="row">
-      <div class="col justify-content-center">
+      <div class="col justify-content-center flex-sm-row">
         <div class="ajusteQuemSomos">
           <h2>Quem Somos</h2>
           <p>
             Somos uma empresa especializada em serviços de reparos com mais de
             15 anos de experiência. Trabalhamos com os seguintes equipamentos:
             Computadores de mesa (desktop), notebook, netbook, ultrabook, placa
-            mãe de desktop também reparo e troca de socket), reparo em
+            mãe de desktop também reparo e troca de socket, reparo em
             processadores AMD Ryzen (terminal quebrado ou torto) All in One,
             servidor, Apple Macbook Pro e Air, iMac, placa de vídeo, vídeo game,
             monitor e recuperação de dados.
           </p>
         </div>
       </div>
-      <div class="col">
+      <div class="row-sm col-md">
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="assets/img/IMAGEM-PROCESSADOR.jpg" class="d-block w-100 teste" alt="..." />
+              <img src="/assets/img/IMAGEM-PROCESSADOR.jpg" class="d-block w-100 teste" alt="..." />
             </div>
             <div class="carousel-item">
-              <img src="assets/img/LOGO COM FUNDO.jpg" class="d-block w-100 teste" alt="..." />
+              <img src="/assets/img/LOGO COM FUNDO.jpg" class="d-block w-100 teste" alt="..." />
             </div>
             <div class="carousel-item">
-              <img src="assets/img/tecnico-consertando-notebook-quebrado-com-chave-de-fenda.jpg" class="d-block w-100 teste" alt="..." />
+              <img src="/assets/img/tecnico-consertando-notebook-quebrado-com-chave-de-fenda.jpg" class="d-block w-100 teste" alt="..." />
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -128,12 +128,12 @@
   <div class="divider"></div>
 
   <!--Serviços-->
-  <section class="d-flex flex-column align-itens-center container">
+  <section class="d-flex flex-column align-itens-center container-fluid">
     <div class="d-flex justify-content-center">
       <h2>Serviços</h2>
     </div>
     <div>
-      <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleAutoplaying2" class="carousel slide full-width-div " data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -142,12 +142,12 @@
           <button type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner servicos">
           <div class="carousel-item active">
-            <img src="/assets/img/PAPEL TIMBRADO.jpg" class="d-block w-100" alt="Imagem de teste 1 " />
+            <img src="/assets/img/PAPEL TIMBRADO.jpg" class="d-block w-100" alt="Imagem de teste 1 "  />
           </div>
           <div class="carousel-item">
-            <img src="/assets/img/PEN-DRIVE.jpg" class="d-block w-100" alt="Imagem de teste 2" />
+            <img src="/assets/img/PEN-DRIVE.jpg" class="d-block  w-100" alt="Imagem de teste 2" />
           </div>
           <div class="carousel-item">
             <img src="/assets/img/CARTÃO DE VISITA.jpg" class="d-block w-100" alt="Imagem de teste 3" />
@@ -169,21 +169,23 @@
       <a href="#" class="button">Todos os Serviços</a>
     </div>
 
-    <div class="d-flex justify-content-evenly mt-5">
-      <div class="d-flex flex-column text-center">
+    <div class="textoServico mt-5">
+
+      <div class="informacoesServicos">
         <span class="span">100,000,000+</span>
         <span class="spanText mt-1">Mais de 1 milhão de visualizações por mês no Youtube.</span>
       </div>
 
-      <div class="d-flex flex-column text-center">
+      <div class="informacoesServicos">
         <span class="span">1,500+</span>
         <span class="spanText mt-1">Mais de 1500 equipamentos recebidos por mês.</span>
       </div>
 
-      <div class="d-flex flex-column text-center">
+      <div class="informacoesServicos">
         <span class="span">80%</span>
         <span class="spanText mt-1">Com mais de 80% de sucesso nos reparos.</span>
       </div>
+
     </div>
   </section>
   <!-- * * * * *-->
@@ -219,7 +221,7 @@
           </div>
           <div class="cliente container">
             <div class="imagem">
-              <img src="assets/img/cliente.jpg" alt="imagem do cliente" width="50" height="50" />
+              <img src="/assets/img/cliente.jpg" alt="imagem do cliente" width="50" height="50" />
             </div>
             <div class="informacoes">
               <p class="nome">Marcela Vinicios</p>
@@ -245,7 +247,7 @@
           </div>
           <div class="cliente container">
             <div class="imagem">
-              <img src="assets/img/cliente.jpg" alt="imagem do cliente" width="50" height="50" />
+              <img src="/assets/img/cliente.jpg" alt="imagem do cliente" width="50" height="50" />
             </div>
             <div class="informacoes">
               <p class="nome">Marcela Vinicios</p>
@@ -268,9 +270,10 @@
   <div class="divider"></div>
 
   <!--Missao, valores, valores-->
-  <section class="container">
-    <div class="d-flex flex-row justify-content-between cardsCustomizacao">
-      <div class="card cards text-center shadow" style="width: 120rem">
+  <section class="container-sm container-md">
+    <div class="cardsCustomizacao card-deck">
+
+      <div class="card cards text-center shadow">
         <i class="bi bi-globe"></i>
         <div class="card-body">
           <h3 class="card-title">Missão</h3>
@@ -283,7 +286,7 @@
         </div>
       </div>
 
-      <div class="card cards text-center shadow" style="width: 120rem">
+      <div class="card cards text-center shadow">
         <i class="bi bi-bar-chart-line-fill"></i>
         <div class="card-body">
           <h3 class="card-title">Visão</h3>
@@ -295,7 +298,7 @@
         </div>
       </div>
 
-      <div class="card text-center shadow" style="width: 120rem">
+      <div class="card cards text-center shadow">
         <i class="bi bi-award"></i>
         <div class="card-body">
           <h3 class="card-title">Valores</h3>
@@ -314,17 +317,17 @@
 
   <!--FAQ-->
   <section class="container" id="FAQ">
-    <div class="d-flex flex-column text-center">
+    <div class="faq text-center">
       <h2>F.A.Q</h2>
       <p>Dúvidas frequentes dos nossos clientes</p>
     </div>
 
-    <div class="container d-flex justify-content-between">
+    <div class="container faqOpcoes">
 
-      <div class="container mar">
+      <div class="container">
 
-        <div class="primeiroAccordino">
-          <div class="accordion" id="accordionParte1">
+        <div class="primeiroAccordion">
+          <div class="accordion" id="accordionParte1" style="border-radius: 50%;">
   
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
@@ -482,7 +485,7 @@
   <div class="whatsapp-widget">
     <a href="https://api.whatsapp.com/send?phone=NUMERODOSEUCONTATO" target="_blank">
       <i class="fa-brands fa-whatsapp"></i>
-      <span>Entre em contato pelo WhatsApp</span>
+      <span class="remove-text">Entre em contato pelo WhatsApp</span>
     </a>
   </div>  
   <!-- * * * * *-->
