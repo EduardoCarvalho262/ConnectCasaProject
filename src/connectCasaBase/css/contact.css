@@ -1,0 +1,21 @@
+.boxOfContacts{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 250px;
+    width: 550px;
+    height: 280px;
+    
+
+};
+
+h1{
+    position: relative;
+}
+
+.titleBox{
+    margin-left: 180px;
+    color: black;
+    
+
+}
