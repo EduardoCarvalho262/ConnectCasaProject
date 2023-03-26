@@ -3,6 +3,7 @@ body h1,h2,h3{
     color: #01003a;
     font-style: italic;
     line-height: 1.5;
+    font-weight: bolder!important;
 }
 
 body p {
@@ -25,9 +26,17 @@ body p {
     text-align: center;
 }
 
+.ajusteQuemSomos p {
+    font-size: 1.2em;
+}
 
-.teste {
+
+.alturaImagem {
     height: 22em;
+}
+
+.alturaImagemServicos{
+    height: 40em;
 }
 
 .testeP {
@@ -42,6 +51,15 @@ body p {
     text-decoration: none;
     box-shadow: none;
     width: max-content;
+}
+
+.button:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+  
+.button:active {
+    transform: none;
 }
 
 .span {
@@ -97,7 +115,7 @@ body p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .nome {
@@ -107,10 +125,11 @@ body p {
 
 .cargo {
     color: #409fda;
-    margin: 0;
+    margin-top: -1em;
 }
 
 .imagem img{
+    margin-top: -1em;
     border-radius: 50%;
 }
 
@@ -138,7 +157,7 @@ body p {
     font-size: 30px;
 }
 
-.cardsCustomizacao p {
+.cardsCustomizacao span {
     text-align: justify;
     font-size: 16px;
 }
@@ -164,11 +183,20 @@ body p {
     flex-direction: column;
 }
 
+.faq p{
+    font-size: 1.3em;
+}
+
 .faqOpcoes {
     display: flex;
     justify-content: space-between;
 }
 
+
+.accordion-item{
+    border: none;
+    border-radius: 50%;
+}
 
 .accordion-button.collapsed {
     background-color: #15283b;
@@ -185,7 +213,6 @@ body p {
 }
 
 .accordion-button:not(.collapsed)::after{
-    margin-top: 0.5em;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
@@ -193,12 +220,11 @@ body p {
 .panel-default > .panel-heading {
     border-radius: 10px;
     overflow: hidden;
-  }
+}
   
-  /* Estilizando o border radius dos painéis */
-  .panel-default .panel-body {
+.panel-default .panel-body {
     border-radius: 0 0 10px 10px;
-  }
+}
 
 .whatsapp-widget {
     position: fixed;
@@ -274,7 +300,7 @@ body p {
        font-size: 1em;
     }
    
-    .cards p {
+    .cards span {
         font-size: 1em;
     }
     
