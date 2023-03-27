@@ -1,3 +1,18 @@
+body h1,h2,h3{
+    font-family: 'Golos Text', sans-serif;
+    color: #01003a;
+    font-style: italic;
+    line-height: 1.5;
+    font-weight: bolder!important;
+}
+
+body p {
+    font-family: 'Golos Text', sans-serif;
+    font-style: normal;
+    line-height: 1.5;
+    color: #333;
+    padding: 10px 20px;
+}
 .ajusteCor a {
     color: white;
 }
@@ -11,17 +26,21 @@
     text-align: center;
 }
 
+.ajusteQuemSomos p {
+    font-size: 1.2em;
+}
 
-.teste {
+
+.alturaImagem {
     height: 22em;
+}
+
+.alturaImagemServicos{
+    height: 40em;
 }
 
 .testeP {
     font-size: 18px;
-}
-
-.testeH2 {
-    font-size: 32px;
 }
 
 .button {
@@ -34,13 +53,22 @@
     width: max-content;
 }
 
+.button:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+  
+.button:active {
+    transform: none;
+}
+
 .span {
     color: #15283b;
-    font-size: 52px;
+    font-size: 4em;
 }
 
 .spanText {
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 .divider {
@@ -87,7 +115,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .nome {
@@ -97,10 +125,11 @@
 
 .cargo {
     color: #409fda;
-    margin: 0;
+    margin-top: -1em;
 }
 
 .imagem img{
+    margin-top: -1em;
     border-radius: 50%;
 }
 
@@ -114,14 +143,21 @@
 }
 
 .cards {
+    width: 120rem;
     margin-right: 5em;
+}
+
+.cardsCustomizacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .cardsCustomizacao h3 {
     font-size: 30px;
 }
 
-.cardsCustomizacao p {
+.cardsCustomizacao span {
     text-align: justify;
     font-size: 16px;
 }
@@ -131,6 +167,36 @@
     font-size: 50px;
 }
 
+.textoServico{
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacoesServicos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+}
+
+.faq p{
+    font-size: 1.3em;
+}
+
+.faqOpcoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.accordion-item{
+    border: none;
+    border-radius: 50%;
+}
 
 .accordion-button.collapsed {
     background-color: #15283b;
@@ -147,8 +213,17 @@
 }
 
 .accordion-button:not(.collapsed)::after{
-    margin-top: 0.5em;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* Estilizando o border radius do accordion */
+.panel-default > .panel-heading {
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+.panel-default .panel-body {
+    border-radius: 0 0 10px 10px;
 }
 
 .whatsapp-widget {
@@ -189,4 +264,130 @@
     animation-name: slide-in;
     animation-duration: 0.5s;
   }
+
+
+  /* Responsividade */
+
+  /* Smartphones em modo retrato */
+@media (max-width: 480px) {
+    body h2 {
+        font-size: 1.5em;
+    }
+
+    .carouselResponsivo{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .span {
+        font-size: 1.8rem;
+    }
+    
+    .spanText {
+        font-size: 0.8rem;
+    }
+
+    .cardsCustomizacao {
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 100%;
+        margin-top: 4em;
+    }
+
+    .cards h3 {
+       font-size: 1em;
+    }
+   
+    .cards span {
+        font-size: 1em;
+    }
+    
+    .cards i{
+        font-size: 1em;
+    }
+
+    .informacoesServicos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoServico {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .faqOpcoes {
+        flex-direction: row;
+    }
+    
+    .remove-text {
+        display: none;
+        padding: none;
+    }
+
+    .whatsapp-widget a i {
+        font-size: 2em;
+    }
+
+    .whatsapp-widget a {
+        padding-right: 0.5em;
+    }
+  }
+  
+  /* Smartphones em modo paisagem e tablets em modo retrato */
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    body h2 {
+        font-size: 1.5em;
+    }
+
+    .carouselResponsivo{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .span {
+        font-size: 2.3rem;
+    }
+    
+    .spanText {
+        font-size: 1.2rem;
+    }
+
+    .cardsCustomizacao {
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 100%;
+        margin-top: 4em;
+    }
+
+    .cards h3 {
+       font-size: 1.4em;
+    }
+   
+    .cards p {
+        font-size: 1em;
+    }
+    
+    .cards i{
+        font-size: 2.5em;
+    }
+
+    .informacoesServicos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoServico {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .faqOpcoes {
+        flex-direction: row;
+    }
+}
   
