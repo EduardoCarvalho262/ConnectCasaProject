@@ -37,7 +37,7 @@ ul li {
 
 }
 
-#card{
+.card{
     border-radius: 10px;
     margin-top: 300px;
     
@@ -55,4 +55,18 @@ ul li {
 
 .title{
     text-align: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    .w3-card-4{
+        background-color:blue;
+    }
+}
+  
+/* Smartphones em modo paisagem e tablets em modo retrato */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .w3-card-4{
+        background-color:blue;
+    }
+  
 }

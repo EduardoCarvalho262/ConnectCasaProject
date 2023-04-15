@@ -265,6 +265,15 @@ body p {
     animation-duration: 0.5s;
   }
 
+  .colorButton{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .iconColor{
+    color: white;
+  }
 
   /* Responsividade */
 
